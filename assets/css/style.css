@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    height: 200vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+/* Main Nav */
+nav {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+    height: 50px;
+    transition-property: background;
+    transition-duration: 500ms;
+}
+
+nav:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.nav-col1, .nav-col3, nav ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-col1, .nav-col3 {
+    width: calc(100% / 12 * 3);
+}
+
+.nav-col2 {
+    width: calc(100% / 12 * 6);
+}
+
+.nav-col3 {
+    justify-content: flex-end;
+}
+
+nav ul {
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-col a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 500ms;
+}
+
+.nav-col a:hover {
+    color: #ed1c24;
+}
+
+.nav-col1 a, .nav-col3 a {
+    margin: 0 10px;
+}
+
+/* Hero Section */
+section#hero {
+    height: 100%;
+    max-height: 750px;
+    background: -webkit-radial-gradient(center center, circle cover, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%), url(../images/1@2x-b7ff4b996ed6a073997526c6046aa067.jpg.webp);
+    background-position: 50% 10%;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+}
+
+.first-container {
+    height: 100%;
+    max-height: 442px;
+    margin-top: 150px;
+}
+
+div.hero-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: calc(100% / 12 * 12);
+}
+
+div#trakt-full {
+    width: 100%;
+    max-width: 300px;
+    font-size: 50px;
+}
+
+#hero img[alt="Trakt"] {
+    width: 100%;
+    max-width: 60px;
+    position: relative;
+    top: 10px;
+}
+
+span.trakt-hero {
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.hero-col1 hr {
+    width: 50%;
+    margin-top: 15px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+h1 {
+    font-size: 42px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+button.hero-button {
+    width: 100%;
+    height: 100%;
+    max-width: 205px;
+    max-height: 45px;
+    background-color: #ed1c24;
+    border: none;
+    margin-top: 60px;
+    font-weight: 650;
+    color: #fff;
+    padding: 10px 0;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 850ms;
+}
+
+button.hero-button:hover {
+    transform: scale(1.1);
+}
+
+div.second-container {
+    margin-top: 20px;
+}
+
+ #icons-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    width: 80%;
+} 
+
+/* For Hero Icons */
+img[title="Kodi"] {
+    width: 109.08px;
+    height: 30px;
+}
+
+img[title="Plex"] {
+    width: 74px;
+    height: 25px;
+}
+
+img[title="Netflix"] {
+    width: 81.98px;
+    height: 22px;
+}
+
+img[title="MediaPortal"] {
+    width: 40.74px;
+    height: 30px;
+}
+
+img[title="Emby"] {
+    width: 35px;
+    height: 35px;
+}
+
+img[title="Infuse"] {
+    width: 28.79px;
+    height: 36px;
+}
+
+img[title="MrMC"] {
+    width: 27.8px;
+    height: 30px;
+}
+
+img[title="Stremio"] {
+    width: 40px;
+    height: 40px;
+}
+
+img[title="Serviio"] {
+    width: 36.17px;
+    height: 30px;
+}
+
+img[title="VLC"] {
+    width: 36.53px;
+    height: 35px;
+}
+
+div#icons-holder img {
+    margin-right: 32px;
+}
+
+div#icons-holder img:hover {
+    animation: pulse 800ms infinite;
+    animation-timing-function: linear; 
+} @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1);
+    100% { transform: scale(1); }
+    }
+  }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    /* Hero Section */
+    .first-container {
+        margin-top: 100px;
+    }
+}
+  
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    /* Navbar */
+    div.nav-col2 {
+        visibility: hidden;
+        width: calc(100% / 12 * 3);
+    }
+    .nav-col3 {
+        width: calc(100% / 12 * 6);
+    }
+
+    /* Hero Section */
+    .first-container {
+        margin-top: 80px;
+    }
+
+    hr {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding: 10px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    /* Hero Section */
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+}
+  
+
