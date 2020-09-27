@@ -71,7 +71,8 @@ img[title="VLC"] {
 }
 
 #hero div.icons-holder img:hover,
-#second-section img:hover {
+#second-section img:hover,
+#fourth-section a:hover {
   animation: pulse 800ms infinite;
   animation-timing-function: linear;
 }
@@ -332,6 +333,7 @@ div.second-container {
 #third-section {
   height: 100%;
   max-height: 452px;
+  background-color: rgba(0, 0, 0, 0.1);
   transition: 1000ms;
 }
 
@@ -444,6 +446,39 @@ div.second-container {
   background-color: #c6262a;
 }
 
+/* 4th Section */
+#fourth-section {
+  transition: 1000ms;
+  color: white;
+  height: 100%;
+  max-height: 490px;
+  background: url(../images/apps@2x-60432a79ac813e83eaecf8d08329e60793c3242a9ad3c16a5815e8e31d0dbd25.jpg.webp);
+  background-size: cover;
+  background-position: center top;
+}
+
+#fourth-section h2 {
+  margin-top: 80px;
+}
+
+#fourth-section p {
+  margin: 20px 0;
+}
+
+#fourth-section .font-awesome-icons-wrapper {
+  display: flex;
+  margin: 20px 0 30px 0;
+}
+
+#fourth-section a {
+  color: white;
+}
+
+#fourth-section .fa {
+  font-size: 30px;
+  margin-right: 16px;
+}
+
 /* Animations */
 @keyframes pulse {
   0% {
@@ -493,8 +528,7 @@ div.second-container {
   }
 
   #second-section h2 {
-    font-size: 32px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   #second-section p {
@@ -554,7 +588,11 @@ div.second-container {
 
   /* Second Section */
   #second-section h2 {
-    margin-top: 15px;
+    font-size: 32px;
+  }
+
+  #second-section p {
+    font-size: 16px;
   }
 
   #second-section div.icons-holder {
@@ -588,6 +626,43 @@ div.second-container {
     height: 49px;
     width: 90px;
   }
+
+  /* Fourth Section */
+  #fourth-section {
+    transition: 1000ms;
+    background-position: 15% top;
+    max-height: 410px;
+  }
+
+  #fourth-section .container {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100%;
+  }
+
+  #fourth-section .fourth-section-col1 {
+    display: none;
+  }
+
+  #fourth-section .fourth-section-col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  #fourth-section .font-awesome-icons-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  #fourth-section h2 {
+    font-size: 32px;
+  }
+
+  #fourth-section p {
+    font-size: 16px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -609,6 +684,16 @@ div.second-container {
   #second-section div.icons-holder img {
     margin-right: 10px;
   }
+
+  /* Third Section */
+  #third-section .streaming-links a {
+    width: 90px;
+  }
+
+  #third-section .streaming-links a .icon {
+    height: 39px;
+    width: 80px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -620,5 +705,20 @@ div.second-container {
   #second-section p,
   #third-section p {
     font-size: 12px;
+  }
+
+  /* Fourth Section */
+  #fourth-section h2 {
+    margin-top: 50px;
+  }
+
+  #fourth-section h2 {
+    margin: 15px;
+  }
+}
+
+@media (max-width: 414px) {
+  #fourth-section .font-awesome-icons-wrapper {
+    margin: 10px 0 15px 0;
   }
 }
