@@ -104,6 +104,10 @@ img[title="VLC"] {
   width: calc(100% / 12 * 6);
 }
 
+.col-2 {
+  width: calc(100% / 12 * 2);
+}
+
 /* Main Nav */
 nav {
   position: absolute;
@@ -515,6 +519,52 @@ div.second-container {
   margin-top: 25px;
 }
 
+/* 6th Section */
+#sixth-section {
+  height: 100%;
+  max-height: 720px;
+  background: url(../images/map-dots@2x-469b900c6e202e895727925b8b8584d9757e771d2290a4d09b566bb12bc92ca0.jpg.webp);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 1000ms;
+}
+
+#sixth-section .row {
+  max-width: 940px;
+  max-height: 80px;
+  margin: 0 auto;
+}
+
+#sixth-section .col-6,
+#sixth-section .col-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 16px;
+  transition: 1000ms;
+}
+
+#sixth-section .sixth-section-col1 {
+  background: #ed1c24;
+}
+
+#sixth-section .sixth-section-col2 {
+  background: #16a085;
+}
+#sixth-section .sixth-section-col3 {
+  background: #8e44ad;
+}
+#sixth-section .sixth-section-col4 {
+  background: #009edf;
+}
+
+#sixth-section h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
 /* Animations */
 @keyframes pulse {
   0% {
@@ -707,6 +757,40 @@ div.second-container {
 
   #fifth-section p {
     font-size: 16px;
+  }
+
+  /* 6th Section */
+  #sixth-section {
+    transition: 1000ms;
+    height: 402px;
+  }
+
+  #sixth-section .row {
+    margin: 0;
+    max-height: 500px;
+  }
+
+  #sixth-section .sixth-section-col1 {
+    width: calc(100% / 12 * 12);
+    transition: 100ms;
+  }
+
+  #sixth-section .sixth-section-col2 {
+    width: calc(100% / 12 * 4);
+  }
+
+  #sixth-section .sixth-section-col3 {
+    width: calc(100% / 12 * 4);
+    transition: 100ms;
+  }
+
+  #sixth-section .sixth-section-col4 {
+    width: calc(100% / 12 * 4);
+    transition: 100ms;
+  }
+
+  #sixth-section h2 {
+    font-size: 19px;
   }
 }
 
