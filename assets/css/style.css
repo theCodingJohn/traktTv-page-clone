@@ -100,12 +100,24 @@ img[title="VLC"] {
   width: calc(100% / 12 * 12);
 }
 
+.col-8 {
+  width: calc(100% / 12 * 8);
+}
+
 .col-6 {
   width: calc(100% / 12 * 6);
 }
 
+.col-3 {
+  width: calc(100% / 12 * 3);
+}
+
 .col-2 {
   width: calc(100% / 12 * 2);
+}
+
+.col-1 {
+  width: calc(100% / 12 * 1);
 }
 
 /* Main Nav */
@@ -531,7 +543,6 @@ div.second-container {
 }
 
 #sixth-section .row {
-  max-width: 940px;
   max-height: 80px;
   margin: 0 auto;
 }
@@ -563,6 +574,59 @@ div.second-container {
 #sixth-section h2 {
   text-align: center;
   font-size: 24px;
+}
+
+/* Footer */
+#footer {
+  color: #fff;
+  background: #000;
+  height: 100%;
+  max-height: 102px;
+  padding: 15px 0;
+  transition: 1000ms;
+}
+
+#footer .container {
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer .footer-row1-col1 {
+  flex-wrap: wrap;
+}
+
+#footer .footer-row1-col1,
+#footer .footer-row1-col3 {
+  display: flex;
+}
+
+#footer a {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+#footer .footer-row2-col1 {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 15px 0;
+}
+
+#footer img {
+  margin-right: 13px;
+  opacity: 0.3;
+  height: 30px;
+}
+#footer p {
+  font-size: 11px;
+}
+
+#footer a:hover {
+  color: #ed1c24;
+  transition: 500ms;
 }
 
 /* Animations */
@@ -635,6 +699,24 @@ div.second-container {
   /* Third Section */
   #third-section h2 {
     margin-top: 40px;
+  }
+
+  /* Footer */
+  #footer {
+    transition: 1000ms;
+    max-height: 132px;
+  }
+
+  #footer .footer-row1-col1 {
+    width: calc(100% / 12 * 12);
+  }
+
+  #footer .footer-row1-col2 {
+    display: none;
+  }
+
+  #footer .footer-row1-col3 {
+    margin-top: 10px;
   }
 }
 
@@ -823,6 +905,11 @@ div.second-container {
     height: 39px;
     width: 80px;
   }
+
+  /* Footer */
+  #footer {
+    max-height: 150px;
+  }
 }
 
 @media (max-width: 430px) {
@@ -847,7 +934,29 @@ div.second-container {
 }
 
 @media (max-width: 414px) {
+  #hero {
+    max-height: 800px;
+  }
+
+  #hero .container {
+    max-height: none;
+  }
+
+  #third-section {
+    max-height: 550px;
+  }
+
+  #fourth-section {
+    max-height: 450px;
+  }
+
   #fourth-section .font-awesome-icons-wrapper {
     margin: 10px 0 15px 0;
+  }
+}
+
+@media (max-width: 280px) {
+  #footer {
+    max-height: 180px;
   }
 }
