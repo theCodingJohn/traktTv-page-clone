@@ -938,12 +938,8 @@ div.second-container {
     max-height: 800px;
   }
 
-  #hero .container {
-    max-height: none;
-  }
-
   #third-section {
-    max-height: 550px;
+    max-height: 450px;
   }
 
   #fourth-section {
