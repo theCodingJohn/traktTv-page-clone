@@ -274,6 +274,10 @@ div.second-container {
 }
 
 /* For Hero Icons */
+#hero .for-mobile-icons {
+  display: none;
+}
+
 #hero img[title="Kodi"] {
   width: 109.08px;
   height: 30px;
@@ -290,7 +294,7 @@ div.second-container {
 }
 
 #hero div.icons-holder img {
-  margin-right: 32px;
+  margin: 5px 14px;
 }
 
 /* Second Section */
@@ -331,16 +335,20 @@ div.second-container {
 }
 
 /* For Second Section Icons */
-#second-section img[title="Kodi"] {
+#second-section img[title="Kodi"],
+#hero a[class="for-mobile-icons"] img[title="Kodi"] {
+  width: 32.16px;
   height: 32px;
 }
 
-#second-section img[title="Plex"] {
+#second-section img[title="Plex"],
+#hero a[class="for-mobile-icons"] img[title="Plex"] {
   width: 18.28px;
   height: 30px;
 }
 
-#second-section img[title="Netflix"] {
+#second-section img[title="Netflix"],
+#hero a[class="for-mobile-icons"] img[title="Netflix"] {
   width: 16.73px;
   height: 30px;
 }
@@ -889,6 +897,14 @@ div.second-container {
 
   #hero div.icons-holder {
     width: 100%;
+  }
+
+  #hero .for-mobile-icons {
+    display: block;
+  }
+
+  #hero .for-desktop-icons {
+    display: none;
   }
 
   /* Second Section */
